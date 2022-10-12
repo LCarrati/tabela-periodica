@@ -43,55 +43,55 @@ function cadastroElemento(eleNome, simb, na, sint, rad, elet, distr, img, pronto
 
 // Alimentando a função construtora
 elemento1 = new cadastroElemento('Hidrogênio', 'H', 1, false, false, 1, distrEle(1), './imagens/hidrogenio.jpg', true, grupo[0]);
-elemento2 = new cadastroElemento('Lítio', 'Li', 3, false, false, 3, distrEle(3), '/imagens/litio.jpg', true, grupo[0]);
-elemento3 = new cadastroElemento('Sódio', 'Na', 11, false, false, 11, distrEle(11), '/imagens/sodio.jpg', true, grupo[0]);
-elemento4 = new cadastroElemento('Potássio', 'K', 19, false, false, 19, distrEle(19), '/imagens/potassio.jpg', true, grupo[0]);
-elemento5 = new cadastroElemento('Rubídio', 'Rb', 37, false, false, 37, distrEle(37), '/imagens/rubidio.jpg', true, grupo[0]);
-elemento6 = new cadastroElemento('Césio', 'Cs', 55, false, false, 55, distrEle(55), '/imagens/cesio.jpg', true, grupo[0]);
-elemento7 = new cadastroElemento('Frâncio', 'Fr', 87, false, true, 87, distrEle(87), '/imagens/francio.jpg', true, grupo[0]);
-elemento8 = new cadastroElemento('Berílio', 'Be', 4, false, false, 4, distrEle(4), '/imagens/berilio.jpg', true, grupo[1]);
-elemento9 = new cadastroElemento('Magnésio', 'Mg', 12, false, false, 12, distrEle(12), '/imagens/magnesio.jpg', true, grupo[1]);
-elemento10 = new cadastroElemento('Cálcio', 'Ca', 20, false, false, 20, distrEle(20), '/imagens/calcio.jpg', true, grupo[1]);
-elemento11 = new cadastroElemento('Estrôncio', 'Sr', 38, false, false, 38, distrEle(38), '/imagens/estroncio.jpg', true, grupo[1]);
-elemento12 = new cadastroElemento('Bário', 'Ba', 56, false, false, 56, distrEle(56), '/imagens/bario.jpg', true, grupo[1]);
-elemento13 = new cadastroElemento('Rádio', 'Ra', 88, false, true, 88, distrEle(88), '/imagens/radio.jpg', true, grupo[1]);
-elemento14 = new cadastroElemento('Boro', 'B', 5, false, false, 5, distrEle(5), '/imagens/boro.jpg', true, grupo[2]);
-elemento15 = new cadastroElemento('Alumínio', 'Al', 13, false, false, 13, distrEle(13), '/imagens/aluminio.jpg', true, grupo[2]);
-elemento16 = new cadastroElemento('Gálio', 'Ga', 31, false, false, 31, distrEle(31), '/imagens/galio.jpg', true, grupo[2]);
-elemento17 = new cadastroElemento('Índio', 'In', 49, false, false, 49, distrEle(49), '/imagens/indio.jpg', true, grupo[2]);
-elemento18 = new cadastroElemento('Tálio', 'Tl', 81, false, false, 81, distrEle(81), '/imagens/talio.jpg', true, grupo[2]);
-elemento19 = new cadastroElemento('Nihônio', 'Nh', 113, true, false, 113, distrEle(113), '/imagens/nihonio.jpg', true, grupo[2]);
-elemento20 = new cadastroElemento('Carbono', 'C', 6, false, false, 6, distrEle(6), '/imagens/carbono.jpg', true, grupo[3]);
-elemento21 = new cadastroElemento('Silício', 'Si', 14, false, false, 14, distrEle(14), '/imagens/silicio.jpg', true, grupo[3]);
-elemento22 = new cadastroElemento('Germânio', 'Ge', 32, false, false, 32, distrEle(32), '/imagens/germanio.jpg', true, grupo[3]);
-elemento23 = new cadastroElemento('Estanho', 'Sn', 50, false, false, 50, distrEle(50), '/imagens/estanho.jpg', true, grupo[3]);
-elemento24 = new cadastroElemento('Chumbo', 'Pb', 82, false, false, 82, distrEle(82), '/imagens/chumbo.jpg', true, grupo[3]);
-elemento25 = new cadastroElemento('Fleróvio', 'Fl', 114, true, true, 114, distrEle(114), '/imagens/flerovio.jpg', true, grupo[3]);
-elemento26 = new cadastroElemento('Nitrogênio', 'N', 7, false, false, 7, distrEle(7), '/imagens/nitrogenio.jpg', true, grupo[4]);
-elemento27 = new cadastroElemento('Fósforo', 'P', 15, false, false, 15, distrEle(15), '/imagens/fosforo.jpg', true, grupo[4]);
-elemento28 = new cadastroElemento('Arsênio', 'As', 33, false, false, 33, distrEle(33), '/imagens/arsenio.jpg', true, grupo[4]);
-elemento29 = new cadastroElemento('Antimônio', 'Sb', 51, false, false, 51, distrEle(51), '/imagens/antimonio.jpg', true, grupo[4]);
-elemento30 = new cadastroElemento('Bismuto', 'Bi', 83, false, false, 83, distrEle(83), '/imagens/bismuto.jpg', true, grupo[4]);
-elemento31 = new cadastroElemento('Moscóvio', 'Mc', 115, true, true, 115, distrEle(115), '/imagens/moscovio.jpg', true, grupo[4]);
-elemento32 = new cadastroElemento('Oxigênio', 'O', 8, false, false, 8, distrEle(8), '/imagens/oxigenio.jpg', true, grupo[5]);
-elemento33 = new cadastroElemento('Enxofre', 'S', 16, false, false, 16, distrEle(16), '/imagens/enxofre.jpg', true, grupo[5]);
-elemento34 = new cadastroElemento('Selênio', 'Se', 34, false, false, 34, distrEle(34), '/imagens/selenio.jpg', true, grupo[5]);
-elemento35 = new cadastroElemento('Telúrio', 'Te', 52, false, false, 52, distrEle(52), '/imagens/telurio.jpg', true, grupo[5]);
-elemento36 = new cadastroElemento('Polônio', 'Po', 84, false, true, 84, distrEle(84), '/imagens/polonio.jpg', true, grupo[5]);
-elemento37 = new cadastroElemento('Livermório', 'Lv', 116, true, true, 116, distrEle(116), '/imagens/livermorio.jpg', true, grupo[5]);
-elemento38 = new cadastroElemento('Flúor', 'F', 9, false, false, 9, distrEle(9), '/imagens/fluor.jpg', true, grupo[6]);
-elemento39 = new cadastroElemento('Cloro', 'Cl', 17, false, false, 17, distrEle(17), '/imagens/cloro.jpg', true, grupo[6]);
-elemento40 = new cadastroElemento('Bromo', 'Br', 35, false, false, 35, distrEle(35), '/imagens/bromo.jpg', true, grupo[6]);
-elemento41 = new cadastroElemento('Iodo', 'I', 53, false, false, 53, distrEle(53), '/imagens/iodo.jpg', true, grupo[6]);
-elemento42 = new cadastroElemento('Astato', 'At', 85, false, true, 85, distrEle(85), '/imagens/astato.jpg', true, grupo[6]);
-elemento43 = new cadastroElemento('Tenesso', 'Ts', 117, true, true, 117, distrEle(117), '/imagens/tenesso.jpg', true, grupo[6]);
-elemento44 = new cadastroElemento('Hélio', 'He', 2, false, false, 2, distrEle(2), '/imagens/helio.jpg', true, grupo[7]);
-elemento45 = new cadastroElemento('Neônio', 'Ne', 10, false, false, 10, distrEle(10), '/imagens/neonio.jpg', true, grupo[7]);
-elemento46 = new cadastroElemento('Argônio', 'Ar', 18, false, false, 18, distrEle(18), '/imagens/argonio.jpg', true, grupo[7]);
-elemento47 = new cadastroElemento('Criptônio', 'Kr', 36, false, false, 36, distrEle(36), '/imagens/criptonio.jpg', true, grupo[7]);
-elemento48 = new cadastroElemento('Xenônio', 'Xe', 54, false, false, 54, distrEle(54), '/imagens/xenonio.jpg', true, grupo[7]);
-elemento49 = new cadastroElemento('Radônio', 'Rn', 86, false, true, 86, distrEle(86), '/imagens/radonio.jpg', true, grupo[7]);
-elemento50 = new cadastroElemento('Oganessônio', 'Og', 118, true, true, 118, distrEle(118), '/imagens/oganessonio.jpg', true, grupo[7]);
+elemento2 = new cadastroElemento('Lítio', 'Li', 3, false, false, 3, distrEle(3), './imagens/litio.jpg', true, grupo[0]);
+elemento3 = new cadastroElemento('Sódio', 'Na', 11, false, false, 11, distrEle(11), './imagens/sodio.jpg', true, grupo[0]);
+elemento4 = new cadastroElemento('Potássio', 'K', 19, false, false, 19, distrEle(19), './imagens/potassio.jpg', true, grupo[0]);
+elemento5 = new cadastroElemento('Rubídio', 'Rb', 37, false, false, 37, distrEle(37), './imagens/rubidio.jpg', true, grupo[0]);
+elemento6 = new cadastroElemento('Césio', 'Cs', 55, false, false, 55, distrEle(55), './imagens/cesio.jpg', true, grupo[0]);
+elemento7 = new cadastroElemento('Frâncio', 'Fr', 87, false, true, 87, distrEle(87), './imagens/francio.jpg', true, grupo[0]);
+elemento8 = new cadastroElemento('Berílio', 'Be', 4, false, false, 4, distrEle(4), './imagens/berilio.jpg', true, grupo[1]);
+elemento9 = new cadastroElemento('Magnésio', 'Mg', 12, false, false, 12, distrEle(12), './imagens/magnesio.jpg', true, grupo[1]);
+elemento10 = new cadastroElemento('Cálcio', 'Ca', 20, false, false, 20, distrEle(20), './imagens/calcio.jpg', true, grupo[1]);
+elemento11 = new cadastroElemento('Estrôncio', 'Sr', 38, false, false, 38, distrEle(38), './imagens/estroncio.jpg', true, grupo[1]);
+elemento12 = new cadastroElemento('Bário', 'Ba', 56, false, false, 56, distrEle(56), './imagens/bario.jpg', true, grupo[1]);
+elemento13 = new cadastroElemento('Rádio', 'Ra', 88, false, true, 88, distrEle(88), './imagens/radio.jpg', true, grupo[1]);
+elemento14 = new cadastroElemento('Boro', 'B', 5, false, false, 5, distrEle(5), './imagens/boro.jpg', true, grupo[2]);
+elemento15 = new cadastroElemento('Alumínio', 'Al', 13, false, false, 13, distrEle(13), './imagens/aluminio.jpg', true, grupo[2]);
+elemento16 = new cadastroElemento('Gálio', 'Ga', 31, false, false, 31, distrEle(31), './imagens/galio.jpg', true, grupo[2]);
+elemento17 = new cadastroElemento('Índio', 'In', 49, false, false, 49, distrEle(49), './imagens/indio.jpg', true, grupo[2]);
+elemento18 = new cadastroElemento('Tálio', 'Tl', 81, false, false, 81, distrEle(81), './imagens/talio.jpg', true, grupo[2]);
+elemento19 = new cadastroElemento('Nihônio', 'Nh', 113, true, false, 113, distrEle(113), './imagens/nihonio.jpg', true, grupo[2]);
+elemento20 = new cadastroElemento('Carbono', 'C', 6, false, false, 6, distrEle(6), './imagens/carbono.jpg', true, grupo[3]);
+elemento21 = new cadastroElemento('Silício', 'Si', 14, false, false, 14, distrEle(14), './imagens/silicio.jpg', true, grupo[3]);
+elemento22 = new cadastroElemento('Germânio', 'Ge', 32, false, false, 32, distrEle(32), './imagens/germanio.jpg', true, grupo[3]);
+elemento23 = new cadastroElemento('Estanho', 'Sn', 50, false, false, 50, distrEle(50), './imagens/estanho.jpg', true, grupo[3]);
+elemento24 = new cadastroElemento('Chumbo', 'Pb', 82, false, false, 82, distrEle(82), './imagens/chumbo.jpg', true, grupo[3]);
+elemento25 = new cadastroElemento('Fleróvio', 'Fl', 114, true, true, 114, distrEle(114), './imagens/flerovio.jpg', true, grupo[3]);
+elemento26 = new cadastroElemento('Nitrogênio', 'N', 7, false, false, 7, distrEle(7), './imagens/nitrogenio.jpg', true, grupo[4]);
+elemento27 = new cadastroElemento('Fósforo', 'P', 15, false, false, 15, distrEle(15), './imagens/fosforo.jpg', true, grupo[4]);
+elemento28 = new cadastroElemento('Arsênio', 'As', 33, false, false, 33, distrEle(33), './imagens/arsenio.jpg', true, grupo[4]);
+elemento29 = new cadastroElemento('Antimônio', 'Sb', 51, false, false, 51, distrEle(51), './imagens/antimonio.jpg', true, grupo[4]);
+elemento30 = new cadastroElemento('Bismuto', 'Bi', 83, false, false, 83, distrEle(83), './imagens/bismuto.jpg', true, grupo[4]);
+elemento31 = new cadastroElemento('Moscóvio', 'Mc', 115, true, true, 115, distrEle(115), './imagens/moscovio.jpg', true, grupo[4]);
+elemento32 = new cadastroElemento('Oxigênio', 'O', 8, false, false, 8, distrEle(8), './imagens/oxigenio.jpg', true, grupo[5]);
+elemento33 = new cadastroElemento('Enxofre', 'S', 16, false, false, 16, distrEle(16), './imagens/enxofre.jpg', true, grupo[5]);
+elemento34 = new cadastroElemento('Selênio', 'Se', 34, false, false, 34, distrEle(34), './imagens/selenio.jpg', true, grupo[5]);
+elemento35 = new cadastroElemento('Telúrio', 'Te', 52, false, false, 52, distrEle(52), './imagens/telurio.jpg', true, grupo[5]);
+elemento36 = new cadastroElemento('Polônio', 'Po', 84, false, true, 84, distrEle(84), './imagens/polonio.jpg', true, grupo[5]);
+elemento37 = new cadastroElemento('Livermório', 'Lv', 116, true, true, 116, distrEle(116), './imagens/livermorio.jpg', true, grupo[5]);
+elemento38 = new cadastroElemento('Flúor', 'F', 9, false, false, 9, distrEle(9), './imagens/fluor.jpg', true, grupo[6]);
+elemento39 = new cadastroElemento('Cloro', 'Cl', 17, false, false, 17, distrEle(17), './imagens/cloro.jpg', true, grupo[6]);
+elemento40 = new cadastroElemento('Bromo', 'Br', 35, false, false, 35, distrEle(35), './imagens/bromo.jpg', true, grupo[6]);
+elemento41 = new cadastroElemento('Iodo', 'I', 53, false, false, 53, distrEle(53), './imagens/iodo.jpg', true, grupo[6]);
+elemento42 = new cadastroElemento('Astato', 'At', 85, false, true, 85, distrEle(85), './imagens/astato.jpg', true, grupo[6]);
+elemento43 = new cadastroElemento('Tenesso', 'Ts', 117, true, true, 117, distrEle(117), './imagens/tenesso.jpg', true, grupo[6]);
+elemento44 = new cadastroElemento('Hélio', 'He', 2, false, false, 2, distrEle(2), './imagens/helio.jpg', true, grupo[7]);
+elemento45 = new cadastroElemento('Neônio', 'Ne', 10, false, false, 10, distrEle(10), './imagens/neonio.jpg', true, grupo[7]);
+elemento46 = new cadastroElemento('Argônio', 'Ar', 18, false, false, 18, distrEle(18), './imagens/argonio.jpg', true, grupo[7]);
+elemento47 = new cadastroElemento('Criptônio', 'Kr', 36, false, false, 36, distrEle(36), './imagens/criptonio.jpg', true, grupo[7]);
+elemento48 = new cadastroElemento('Xenônio', 'Xe', 54, false, false, 54, distrEle(54), './imagens/xenonio.jpg', true, grupo[7]);
+elemento49 = new cadastroElemento('Radônio', 'Rn', 86, false, true, 86, distrEle(86), './imagens/radonio.jpg', true, grupo[7]);
+elemento50 = new cadastroElemento('Oganessônio', 'Og', 118, true, true, 118, distrEle(118), './imagens/oganessonio.jpg', true, grupo[7]);
 // console.log(elementos);
 
 
@@ -166,7 +166,7 @@ function printTodos(grupo) {
 		// console.log(item.nome + '\n' + item.diagrama),
 		// console.log(item.distriEl.toString());
 		if (item.radioativo == true) {
-			iconeRadioativo = `<img class="iconeRad" src="/imagens/icone-radioativo.svg"></img>`
+			iconeRadioativo = `<img class="iconeRad" src="./imagens/icone-radioativo.svg"></img>`
 		} else iconeRadioativo = ''
 		return `
         	<li class="listaElemento">        
