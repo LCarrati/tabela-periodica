@@ -375,10 +375,13 @@ function deslizaLado(lado) {
 
 // Ao selecionar 'radioativo' ou 'sintetico no menu, o campo de pesquisa será desabilitado (e reabilitado ao selecionar outra opção)
 function resetarCampoPesquisa() {
-	if (opcaoDropdown.value == 'radioativo' || opcaoDropdown.value == 'sintetico') {
-		campoDeBusca.value = ''
-		campoDeBusca.disabled = true;
-	} else campoDeBusca.disabled = false;
+	opcaoDropdown.addEventListener('change',desligaCampo)
+	function desligaCampo(){
+		if (opcaoDropdown.value == 'radioativo' || opcaoDropdown.value == 'sintetico') {
+			campoDeBusca.value = ''
+			campoDeBusca.disabled = true;
+		} else campoDeBusca.disabled = false;
+	}
 }
 
 // Efeito rolagem animada
