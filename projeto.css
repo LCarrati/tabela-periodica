@@ -1,0 +1,602 @@
+/* ----- Global ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #f5f5f5;
+    font-family: "Inter", sans-serif;
+    font-size: 62.5%;
+    color: cornsilk;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: min(6vw, 50px);
+}
+
+
+/* ----- Header ----- */
+header {
+    display: flex;
+    background-color: #1a2c41;
+    text-align: center;
+    min-height: 75px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem 1rem;
+    color: white;
+}
+
+.logo {
+    border-radius: 9px;
+    width: 236px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nomeProj {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+    font-size: 21px;
+    line-height: 1;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    box-shadow: 0 -5px 0px #f7ca3f inset, 500px 0 0 rgba(255, 255, 255, 0.03) inset;
+    padding: 35px 25px 45px 25px;
+    color: #f7ca3f;
+}
+
+
+/* ----- Buscador ----- */
+#dropdown {
+    display: inline-flex;
+    margin: auto;
+}
+
+#myForm {
+    margin: auto;
+}
+
+.procuraTitulo {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2px;
+    margin-right: 3px;
+}
+
+#dadoPesquisa {
+    width: 200px;
+    height: 30px;
+    line-height: 12px;
+    padding: 0 1rem;
+    padding-left: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    background-color: #9ccfe98d;
+    color: #f4f7f9;
+    transition: .3s ease;
+    border-color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#dadoPesquisa:focus,
+input:hover {
+    outline: none;
+    border-color: #24b4fb;
+    background-color: #fff;
+    box-shadow: 0 0 9px 2px rgb(7, 149, 251);
+    color: #1a2c41;
+    font-weight: bold;
+}
+
+input:focus::placeholder {
+    color: #000000;
+}
+
+::placeholder {
+    color: #f4f7f9;
+}
+
+#dadoPesquisa:disabled {
+    background-color: #000;
+    box-shadow: none
+}
+
+#submit {
+    padding: 0 1.5em;
+    color: #fff;
+    background-color: #0071e2;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 31px;
+    border-color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#submit:hover {
+    background-color: #24b4fb;
+    box-shadow: none;
+    border-color: #000;
+    box-shadow: 0 0 9px 2px rgb(7 149 251);
+    transition: .3s ease;
+}
+
+select {
+    width: 200px;
+    height: 30px;
+    line-height: 12px;
+    padding: 0 1rem;
+    padding-left: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    background-color: #9ccfe98d;
+    color: #f4f7f9;
+    border-color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+select:hover {
+    box-shadow: 0 0 9px 2px rgb(7 149 251);
+    transition: .3s ease;
+}
+
+option {
+    background-color: #62869e;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+/* ----- Main ----- */
+main {
+    display: flex;
+    background-color: #f4f7f9;
+    place-content: center;
+    flex-direction: column;
+}
+
+section {
+    display: grid;
+    grid-area: sc;
+    place-content: center;
+    border-radius: 15px;
+}
+
+.explicacao {
+    color: #000;
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: min(4vw, 1.5rem);
+}
+
+.explicacao img {
+    width: 109px;
+}
+
+#mostrarTodos {
+    display: block;
+    grid-area: sc as;
+    margin: 10px auto 20px;
+    color: #fff;
+    background-color: #0071e2;
+    border-radius: 8px;
+    padding: 0.8em 1.2em 0.8em 1em;
+    font-size: 16px;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+#mostrarTodos:hover {
+    background-color: #24b4fb;
+    border-color: #000;
+    box-shadow: 0 0 9px 2px rgb(7 149 251);
+    transition: .3s ease;
+}
+
+#resultado h1 {
+    color: red;
+}
+
+
+/* ----- Footer ----- */
+footer {
+    display: flex;
+    background-color: #1a2c41;
+    text-align: center;
+    min-height: 75px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-bottom: 7px;
+    transition: all 0.3s ease;
+}
+
+footer p a img:hover {
+    scale: 1.5;
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+}
+
+
+/* ----- Lista de elementos ----- */
+.listaElemento {
+    list-style-type: none;
+    background-color: #ffffff26;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        'nome nome'
+        'imagem texto'
+        'imagem texto'
+        'del del'
+        'linus linus';
+    text-align: left;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    transform: scale(0.7, 0.7);
+    transition: .15s;
+    opacity: 0;
+    background-color: #fdfcfc00;
+    width: 90vw;
+    max-width: 450px;
+}
+
+.listaElemento>h2 {
+    grid-area: nome;
+    margin: 13px 0 0 0;
+    display: grid;
+    align-content: end;
+    font-weight: 500;
+    text-align: center;
+    line-height: normal;
+    background-color: firebrick;
+    padding: 5px 0 0 0;
+    font-size: min(12vw, 3rem);
+}
+
+.listaElemento>p {
+    grid-area: texto;
+    margin: 0 0 0 10px;
+    margin-top: 2px;
+    word-wrap: break-word;
+    max-width: 223px;
+    letter-spacing: .1rem;
+    line-height: 1.7;
+    align-content: center;
+    display: grid;
+    font-size: min(4vw, 1.5rem);
+}
+
+.listaElemento>img {
+    grid-area: imagem;
+    margin: 5px;
+    border-radius: 50%;
+    height: min(200px, 40vw);
+}
+
+.del {
+    grid-area: del;
+    max-width: 433px;
+    margin: 25px;
+    word-wrap: break-word;
+    font-size: min(4vw, 1.5rem);
+}
+
+.diag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: min(4vw, 1.5rem);
+    grid-area: linus;
+}
+
+.apagado {
+    color: #202020;
+}
+
+.del .apagado {
+    display: none;
+}
+
+.listaElemento.inView {
+    opacity: 1;
+    transform: scale(1, 1);
+    background-color: #333;
+    box-shadow: 0px 0px 20px 8px #000;
+    transition: .3s ease;
+}
+
+img.iconeRad {
+    right: 5px;
+    top: 15px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.scrollLeft {
+    position: relative;
+    left: -103px;
+    opacity: 0 !important;
+}
+
+.scrollRight {
+    position: relative;
+    left: 103px;
+    opacity: 0 !important;
+}
+
+
+/* ----- Menu mobile (hamburguer) ----- */
+.hamburguer {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburguer::before {
+    top: -10px;
+    width: 20px;
+}
+
+.hamburguer::after {
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburguer,
+.toggle-menu {
+    display: none;
+}
+
+nav input:checked~.hamburguer {
+    background: transparent;
+}
+
+nav input:checked~.hamburguer::before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+nav input:checked~.hamburguer::after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+nav input:checked~.menu {
+    right: 0;
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.logo2 {
+    display: none;
+}
+
+.linkLogo {
+    display: none;
+}
+
+@media screen and (max-width:981px) {
+    .hamburguer,
+    .toggle-menu {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header {
+        padding: 10px 20px;
+        align-items: flex-end;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #004488;
+        width: 300px;
+        height: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    }
+
+    nav {
+        justify-content: end;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo2 {
+        display: block;
+        border-radius: 9px;
+        width: 176px;
+        left: -21px;
+        top: -17px;
+        position: relative;
+    }
+
+    .linkLogo {
+        display: block;
+
+    }
+}
+
+
+/* ----- Página sobre o projeto ----- */
+.textoSobre {
+    color: #000;
+    font-size: 1rem;
+    width: 90vw;
+    max-width: 800px;
+    margin: 25px auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+}
+
+.textoSobre h1 {
+    line-height: initial;
+}
+
+.textoSobre h2 {
+    margin: 25px 0;
+}
+
+.textoSobre ul li,
+.textoSobre h3 {
+    color: #000;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.textoSobre ul li {
+    background: url('https://img.icons8.com/3d-fluency/32/000000/right.png') no-repeat left center;
+    padding: 5px 10px 5px 45px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.textoSobre img {
+    text-align: center;
+    margin: auto;
+}
+
+.textoSobre p:last-of-type {
+    text-align: center;
+}
+
+
+/* ----- Validade vencida ----- */
+/* .logoCima {
+    font-size: 1.5rem;
+    color: crimson;
+    font-weight: bold;
+}
+.logoBaixo {
+    font-size: 1.2rem;
+    font-weight: bold;
+} */
+/* article {
+    display: grid;
+    margin: 10px auto 0;
+    max-width: fit-content;
+} */
+/* #tudo {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+/* .menuSuperior {
+    display: flex;
+    font-size: 1rem;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 40px;
+    margin: auto 0 20px;
+} */

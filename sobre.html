@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Tabela periódica (grupos) A criada com JavaSript vanilla, html e CSS, possui vários elementos dinâmicos. Projeto Labenu - introdução a web">
+	<title>Tabela Periódica - Projeto introdução a web</title>
+	<link rel="stylesheet" href="projeto.css">
+	<script src="projeto.js" defer></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="index.html"><img class="logo" src="./imagens/devlogo2.jpg" alt=""></a>
+			<input type="checkbox" class="toggle-menu">
+			<div class="hamburguer"></div>
+			<ul class="menu">
+				<li class="linkLogo" style="height: 68px"><a href="index.html"><img class="logo2" src="./imagens/devlogo2.jpg" alt=""></a></li>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="https://lcarrati.github.io/portfolio" target="_blank">Meu portfólio</a></li>
+				<li><a href="https://www.linkedin.com/in/leonardo-carrati/" target="_blank">LinkedIn</a></li>
+				<li><a href="https://github.com/LCarrati/" target="_blank">GitHub</a></li>
+				<li><a href="https://www.console.blog.br" target="_blank">Blog</a></li>
+			</ul>
+		</nav>
+		<h1 class="nomeProj">Sobre este projeto</h1>
+	</header>
+
+	<main>
+		<section class="textoSobre">
+			<h1>Projeto introdução à web - Labenu</h1>
+			<p>Projeto desenvolvido utilizando Javascript "vanilla", HTML5 e CSS3.</p>
+			<p>Não foram utilizadas bibliotecas, frameworks ou códigos copiados de terceiros, com a intenção de práticar
+				o conhecimento adquirido durante o curso de introdução à web Labenu, tendo como exceção o menu mobile em
+				CSS puro que, para proteger minha sanidade mental das armadilhas do CSS, foi criado seguindo o video: 
+				<a href="https://www.youtube.com/watch?v=XM7sEpl0f7c" target="_blank">Responsive Navigation Menu Bar +
+				Hamburger Menu Toggle - Only with CSS</a>
+			</p> 
+			<br>
+
+			<p>
+				<h2>Conhecimentos e técnicas aplicadas:</h2>
+				<h3>JavaScript</h3>
+				<ul>
+					<li>JavaScript - Criação e manipulação de Arrays e Objetos</li>
+					<li>JavaScript - For Loops, map(), filter()</li>
+					<li>JavaScript - Condicionais if/else, if ternário e switch case</li>
+					<li>JavaScript - Escopo de variáveis e funções</li>
+					<li>JavaScript - Funções nomeadas, anônimas e arrowfunctions</li>
+					<li>JavaScript - Manipulação de Strings e o básico de expressões regulares (RegEx)</li>
+					<li>JavaScript - TemplateString</li>
+					<li>JavaScript - Event listeners</li>
+					<li>JavaScript - Manipulação da árvore DOM</li>
+					<li>JavaScript - Básico de animação através de manipulação elementos no DOM</li>
+				</ul>
+				<br>
+				<h3>CSS</h3>
+				<ul>
+					<li>CSS - Posicionamento e alinhamento utilizando Flex e Grid</li>
+					<li>CSS - Utilização de variáveis</li>
+					<li>CSS - Responsividade através de media queries e funções min/max()</li>
+					<li>CSS - Estilização</li>
+				</ul>
+				<br>
+				<h3>HTML</h3>
+				<ul>
+					<li>HTML 5 semântico</li>
+				</ul>
+			</p>
+			<br>
+			<h2>Uma explicação sobre o conteúdo do projeto</h2>
+			<p>
+				O projeto cria uma lista com os elementos da tabela periódia. Para evitar que o projeto se tornasse
+				muito longo não foram cadastrados todos os elementos, apenas os pertencentes aos antigos grupos 'A'.
+			</p>
+			<img src="./imagens/tabela-antiga-nova.jpg" alt="">
+			<br>
+
+			<h4>A função criadora</h4>
+			<p>Foi utilizada no JavaScript uma função para criar objetos e adicioná-los a um array (.push). Os objetos
+				são adicionados somente se determinadas condições forem verdadeiras (boolean "true" ou "false").
+				Esse array criado torna possível realizar buscas por elementos específicos através do nome ou símbolo
+				(.filter), encontrando o elemento correto mesmo quando o usuário não utiliza a acentuação correta ou
+				utilize letras maiúsculas ou minúsculas. Ex.: Buscar por "Lítio", "Litio" ou "lítio" retorna o mesmo
+				objeto. 
+				<br>
+				É possível filtrar os objetos por suas propriedades, é dessa forma que foi feita a separação dos
+				elementos por grupos da tabela periódica e a listagem de elementos radioativos ou sintéticos. <br>
+				Objetos que possuem em sua propriedade "radioativo: true" foram programados para receber um pequeno
+				ícone em sua imagem.
+			</p>
+			<img src="./imagens/rad-icon.jpg" alt="">
+			<br>
+
+			<h4>O diagrama de Linus Pauling</h4>
+			<p>
+				Também foi desenvolvida no JavaScript uma função que, ao receber um número (número de elétrons do
+				elemento químico), cria automaticamente o diagrama de Pauling. Uma outra função trabalha o array
+				resultante e o prepara para ser exibido na página com a formatação correta.
+			</p>
+			<img src="./imagens/linus-pauling.jpg" alt="">
+			<br>
+
+			<h4>Nevagação na página principal</h4>
+			<p>
+				Na tela principal são listados todos os elementos, separados em seus grupos. Para navegar entre os
+				grupos forma desenvolvidas 2 soluções: <br>
+				- para dispositivos com teclado físico utiliza-se as teclas "seta direita" e "seta esquerda" <br>
+				- para dispositicos com tela touch, utiliza-se "swipe" para direta ou esquerda. 
+			</p>
+			<p>
+				<img src="./imagens/navTeclado.gif" alt="" width="109px"><img src="./imagens/navSwipe.gif" alt=""
+					width="109px">
+			</p>
+			<br>
+
+			<span>Este foi meu primeiro projeto, cometendo erros e aprendendo muito com eles. Para detalhes do código e
+				da lógica aplicada em cada etapa da criação visite o meu blog!</span>
+		</section>
+	</main>
+
+	<footer>
+		<p>Criado com Hyperfocus<img src="./imagens/hyperfocus.gif" alt="" width="17px"> por Leo Carrati &nbsp;&nbsp;<a
+				href="https://github.com/LCarrati/" target="_blank"><img src="./imagens/github.svg" alt=""
+					width="40px"></a></p>
+	</footer>
+
+</body>
+
+</html>
