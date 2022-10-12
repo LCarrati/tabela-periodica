@@ -130,7 +130,7 @@ function imprimir(arrayFiltrado){
             console.log(item.nome + '\n' + item.diagrama)
 			console.log(item.distriEl.toString());
                 if (item.radioativo == true) {
-                    iconeRadioativo = `<img class="iconeRad" src="/imagens/icone-radioativo.svg"></img>`
+                    iconeRadioativo = `<img class="iconeRad" src="./imagens/icone-radioativo.svg"></img>`
                 } else iconeRadioativo = ''
             return ` 
 				<li class="listaElemento"> 
