@@ -42,7 +42,7 @@ function cadastroElemento(eleNome, simb, na, sint, rad, elet, distr, img, pronto
 }
 
 // Alimentando a função construtora
-elemento1 = new cadastroElemento('Hidrogênio', 'H', 1, false, false, 1, distrEle(1), '/imagens/hidrogenio.jpg', true, grupo[0]);
+elemento1 = new cadastroElemento('Hidrogênio', 'H', 1, false, false, 1, distrEle(1), './imagens/hidrogenio.jpg', true, grupo[0]);
 elemento2 = new cadastroElemento('Lítio', 'Li', 3, false, false, 3, distrEle(3), '/imagens/litio.jpg', true, grupo[0]);
 elemento3 = new cadastroElemento('Sódio', 'Na', 11, false, false, 11, distrEle(11), '/imagens/sodio.jpg', true, grupo[0]);
 elemento4 = new cadastroElemento('Potássio', 'K', 19, false, false, 19, distrEle(19), '/imagens/potassio.jpg', true, grupo[0]);
