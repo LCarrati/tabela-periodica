@@ -543,11 +543,11 @@ nav input:checked~.menu {
     z-index: 1;
     grid-area: texto;
     align-self: end;
+    cursor: pointer;
 }
   
 .verMaisCampo {
     margin: 0 10px;
-    cursor: pointer;
     display: inline-block;
     padding: 0px 0.5em;
     color: #00b0f7;
@@ -558,6 +558,12 @@ nav input:checked~.menu {
     grid-area: texto;
     align-self: end;
     cursor: pointer;
+}
+
+.verMaisCheckbox:hover ~ .verMaisCampo {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: firebrick;
 }
 
 .del, .diag, .diag span{
