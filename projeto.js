@@ -298,18 +298,18 @@ function terminaTouch(e){
 
 // Funções para ativar a navegação pelos grupo na página principal e desativar nos resultados de busca
 function ativarNavegacao() {
-	window.addEventListener('keydown', onClick);
+	window.addEventListener('keydown', setasNav);
 	window.addEventListener('touchstart', comecaTouch);
 	window.addEventListener('touchend', terminaTouch);
 }	 
 function desativarNavegacao() {
-	window.removeEventListener('keydown', onClick);
+	window.removeEventListener('keydown', setasNav);
 	window.removeEventListener('touchstart', comecaTouch);
 	window.removeEventListener('touchend', terminaTouch);
 }
 	 
 // Função para navegar pelos grupos utilizando as setas do teclado 		
-function onClick(e) {
+function setasNav(e) {
 	if (e.key == "ArrowRight"){
 		for (i=0; i<grupo.length;i++){
 			if (grupoAtual == grupo[i] && i<grupo.length-1){
@@ -437,3 +437,18 @@ function calcMedia(arrayObjetos) {
 	);
 }
 calcMedia(elementos);
+
+// Função para imprimir o relatório no console
+console.log('Para relatório impresso no console com as informações de cada item: digite "s()" no console ou clique na página e aperte o botão "Home" no teclado. Aguarde carregar as informações.')
+window.addEventListener('keydown', relatorioConsole);
+function relatorioConsole(e) {
+	if (e.key == "Home" || e=='Home'){
+		for (i in elementos){
+			console.table({Nome:elementos[i].nome, Simbolo:elementos[i].simbolo, Radioativo:elementos[i].radioativo, Sintetico:elementos[i].sintetico, 
+			Grupo:elementos[i].grupo, Cadastrado:elementos[i].estaPronto, Elétrons:elementos[i].eletrons});
+		}
+	}
+}
+function s(){
+	relatorioConsole('Home')
+}
