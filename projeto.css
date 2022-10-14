@@ -86,9 +86,9 @@ nav {
 }
 
 .menu li a:hover {
-    box-shadow: 0 -5px 0px #f7ca3f inset, 500px 0 0 rgba(255, 255, 255, 0.03) inset;
+    box-shadow: 0 -5px 0px #0d70e8 inset, 500px 0 0 rgba(255, 255, 255, 0.03) inset;
     padding: 35px 25px 45px 25px;
-    color: #f7ca3f;
+    color: #0d70e8;
 }
 
 
@@ -515,7 +515,7 @@ nav input:checked~.menu {
         border-radius: 9px;
         width: 176px;
         left: -21px;
-        top: -17px;
+        top: -26px;
         position: relative;
     }
 
