@@ -625,35 +625,3 @@ nav input:checked~.menu {
 .textoSobre p:last-of-type {
     text-align: center;
 }
-
-
-/* ----- Validade vencida ----- */
-/* .logoCima {
-    font-size: 1.5rem;
-    color: crimson;
-    font-weight: bold;
-}
-.logoBaixo {
-    font-size: 1.2rem;
-    font-weight: bold;
-} */
-/* article {
-    display: grid;
-    margin: 10px auto 0;
-    max-width: fit-content;
-} */
-/* #tudo {
-    margin: auto;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-} */
-/* .menuSuperior {
-    display: flex;
-    font-size: 1rem;
-    list-style-type: none;
-    justify-content: space-between;
-    gap: 40px;
-    margin: auto 0 20px;
-} */
