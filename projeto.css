@@ -526,6 +526,56 @@ nav input:checked~.menu {
 }
 
 
+/* ----- Ver mais ----- */
+.verMaisCheckbox ~ .verMaisCampo:before {
+    content: 'Ver +';
+}
+  
+.verMaisCheckbox:checked ~ .verMaisCampo:before {
+    content: 'Ver -';
+}
+  
+.verMaisCheckbox {
+    opacity: 0;
+    width: 100%;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    grid-area: texto;
+    align-self: end;
+}
+  
+.verMaisCampo {
+    margin: 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 0.5em;
+    color: #00b0f7;
+    font-size: 0.7em;
+    line-height: 1.5;
+    border: 1px solid #00b0f7;
+    border-radius: 0.25em;
+    grid-area: texto;
+    align-self: end;
+    cursor: pointer;
+}
+
+.del, .diag, .diag span{
+    transition: all 0.3s ease;
+    font-size: 0;
+    margin: 0;
+}
+  
+.verMaisCheckbox:checked ~ .del {
+    margin: 25px;
+}
+
+.verMaisCheckbox:checked ~ .diag, .verMaisCheckbox:checked ~ .diag span, .verMaisCheckbox:checked ~ .del {
+    font-size: min(4vw, 1.5rem);
+    transition: all 0.3s ease;
+}
+
+
 /* ----- Página sobre o projeto ----- */
 .textoSobre {
     color: #000;

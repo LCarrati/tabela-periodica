@@ -136,6 +136,8 @@ function imprimir(arrayFiltrado){
 				<li class="listaElemento"> 
                 	${iconeRadioativo}       
                     <h2>${item.nome.toUpperCase()}</h2>
+					<input type="checkbox" class="read-more-state" id="post-2" />
+					<label for="post-2" class="read-more-trigger"></label>
                     <p>
                         Símbolo: ${item.simbolo}</br>
                         É sintético: ${item.sintetico}</br>
@@ -172,11 +174,15 @@ function printTodos(grupo) {
         	<li class="listaElemento">        
 				${iconeRadioativo}
 				<h2>${item.nome.toUpperCase()}</h2>
+				<input type="checkbox" class="verMaisCheckbox" id="verMais" />
+				<label for="verMais" class="verMaisCampo"></label>
 				<p>
 					Símbolo: ${item.simbolo}</br>
 					É sintético: ${item.sintetico}</br>
 					É radioativo: ${item.radioativo}
+
 				</p>
+
 				<img src="${item.imagem}"></img>
 				<span class="del"> 
 					Distribuição elerônica completa: ${item.distriEl.toString().replaceAll(',', ', ')}
