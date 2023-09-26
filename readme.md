@@ -39,4 +39,4 @@ Live preview:
 [Clique aqui para acessar](https://lcarrati.github.io/tabela-periodica/) 
 
 &nbsp;
-![preview](./imagens/demo.jpg)
+![preview](./imagens/preview.jpg)
